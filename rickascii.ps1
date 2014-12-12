@@ -1,10 +1,10 @@
 $host.UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.Size 80, 25
 [Console]::TreatControlCAsInput = $True
-C:\Users\Public\Documents\rickascii.exe
+.\rickascii.exe
 
 $playerScript = @'
 	$player = New-Object -ComObject "MediaPlayer.MediaPlayer"
-	$player.Open("C:\Users\Public\Documents\rickascii.wav")
+	$player.Open("rickascii.wav")
 	$player
 '@
 
@@ -26,7 +26,7 @@ While ($true) {
 Clear-Host
 $i = 0
 
-Get-Content C:\Users\Public\Documents\rickascii.frames | ForEach {
+Get-Content rickascii.frames | ForEach {
 	Write-Host $_
 
 	If ($i % 24 -eq 0) {
@@ -39,4 +39,4 @@ Get-Content C:\Users\Public\Documents\rickascii.frames | ForEach {
 
 Clear-Host
 $player.Stop()
-$bgPowerShell.Dispose()
+$backgroundPlayer.Dispose()

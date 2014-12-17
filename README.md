@@ -1,5 +1,5 @@
 # rickascii-ps
-**It doesn’t matter what platform you use. He still won’t run around and desert you.**
+![He won’t give you up on the command line either.](rickascii.png)
 
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
